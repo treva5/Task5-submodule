@@ -6,24 +6,26 @@ int main() {
     int eligible;
 
     // Input salary
+    printf("Enter your salary in UGX: ");
+    scanf("%f", &salary);
 
     // Input years of employment
     printf("Enter your years of employment: ");
     scanf("%d", &employment_years);
 
     // Check eligibility
-    | employmet_years >= 2) {
-        elle = 1;
+    if (salary >= 5000 || employment_years >= 2) {
+        eligible = 1;
     } else {
         eligible = 0;
     }
 
     // Display result
     if (eligible) {
-        printf("Y
+        printf("You are eligible for the loan.\n");
     } else {
         printf("You are not eligible for the loan.\n");
     }
-
+     system("pause");
     return 0;
 }
