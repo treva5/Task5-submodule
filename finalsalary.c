@@ -5,6 +5,12 @@ int main() {
     int years_of_service;
 
     // Input years of service
+    printf("Enter the employee's years of service: ");
+    scanf("%d", &years_of_service);
+
+    // Input basic salary
+    printf("Enter the basic salary in UGX: ");
+    scanf("%f", &basic_salary);
 
     // Calculate final salary with bonus if applicable
     if (years_of_service > 5) {
@@ -14,7 +20,8 @@ int main() {
     }
 
     // Display the final salary
-    printf
+    printf("The final salary is: UGX %.2f\n", final_salary);
+    system("pause");
 
     return 0;
 }
